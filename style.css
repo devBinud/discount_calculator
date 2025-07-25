@@ -1,0 +1,128 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wrapper */
+.wrapper {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card Design */
+.calculator-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* .calculator-card:hover {
+  transform: scale(1.01);
+} */
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1.8rem;
+}
+
+/* Form Inputs */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #d28c24;
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #d28c24;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #bb7a1f;
+}
+
+/* Display Panel */
+.display-panel {
+  margin-top: 30px;
+  background: #f8f8f8;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: inset 0 0 5px #ddd;
+}
+
+.display-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+.display-line.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e7f4e;
+  margin-top: 10px;
+  border-top: 1px dashed #ccc;
+  padding-top: 10px;
+}
+
+/* Number Font */
+.amount {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  color: #1a1a1a;
+}

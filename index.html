@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discount Calculator | Kangkan Emporium</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="calculator-card">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+      <h1 class="title">Discount Calculator</h1>
+
+      <div class="form-group">
+        <label for="originalPrice">Original Price (Rs):</label>
+        <input type="number" id="originalPrice" placeholder="Enter original price" />
+      </div>
+
+      <div class="form-group">
+        <label for="discountPercent">Discount (%):</label>
+        <input type="number" id="discountPercent" placeholder="Enter discount percentage" />
+      </div>
+
+      <button onclick="calculateDiscount()">Calculate</button>
+
+      <div class="display-panel">
+        <div class="display-line">
+          <span>Discount Amount:</span>
+          <span class="amount" id="discountAmount">₹0.00</span>
+        </div>
+        <div class="display-line total">
+          <span>Final Price:</span>
+          <span class="amount" id="finalPrice">₹0.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
