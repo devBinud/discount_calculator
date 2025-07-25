@@ -19,3 +19,12 @@ function calculateDiscount() {
   document.getElementById("discountAmount").textContent = formatter.format(discountAmount);
   document.getElementById("finalPrice").textContent = formatter.format(finalPrice);
 }
+
+// Reset values on input change
+document.getElementById("originalPrice").addEventListener("input", resetOutput);
+document.getElementById("discountPercent").addEventListener("input", resetOutput);
+
+function resetOutput() {
+  document.getElementById("discountAmount").textContent = "₹0.00";
+  document.getElementById("finalPrice").textContent = "₹0.00";
+}
