@@ -1,6 +1,6 @@
 {
   "name": "Discount Calculator - Kangkan Emporium",
-  "short_name": "DiscountCalc",
+  "short_name": "Kangkan Calculator",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
