@@ -1,3 +1,11 @@
+// Register the service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('serviceworker.js')
+    .then(reg => console.log('✅ Service Worker registered:', reg.scope))
+    .catch(err => console.error('❌ Service Worker registration failed:', err));
+}
+
+// Discount calculator logic
 function calculateDiscount() {
   const originalPrice = parseFloat(document.getElementById("originalPrice").value);
   const discountPercent = parseFloat(document.getElementById("discountPercent").value);
